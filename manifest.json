@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Fake App",
+    "version": "0.0.1",
+    "description": "Userd for Hybird App H5 part develop",
+
+    "icons": { 
+        "16": "image/16x16.png",
+        "48": "image/48x48.png",
+        "128": "image/128x128.png" 
+    },
+    "browser_action": {
+
+    },
+    "author": "Xin Huang",
+    "options_ui": {
+        // Required.
+        "page": "html/setting.html",
+        // Recommended.
+        "chrome_style": true
+        // Not recommended; only provided for backwards compatibility,
+        // and will be unsupported in a future version of Chrome (TBD).
+        //"open_in_tab": true
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "http://*/",
+        "https://*/",
+        "chrome://*/"
+    ],
+    "background": {
+        "scripts": ["js/background.js"]
+    }
+}
